@@ -14,7 +14,7 @@ leptos_meta = { version = "0.8.6" }
 axum = { version = "0.8.9", optional = true }
 console_error_panic_hook = { version = "0.1.7", optional = true }
 tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
-wasm-bindgen = { version = "0.2.128", optional = true }
+wasm-bindgen = { version = "=0.2.127", optional = true }
 futures = "0.3.34"
 
 [features]

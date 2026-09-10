@@ -5,6 +5,15 @@
 Minimal reproduction for a compilation failure when using Leptos `--split` (**lazy loading**) together with WebSocket
 functionality.
 
+## Solved
+
+Roll back `wasm-bindgen` to `0.2.127`
+
+```
+-wasm-bindgen = { version = "0.2.128" }
++wasm-bindgen = { version = "=0.2.127" }
+```
+
 ## Problem
 
 Running `cargo leptos serve --split` causes `wasm-bindgen` to panic while processing generated WASM:
